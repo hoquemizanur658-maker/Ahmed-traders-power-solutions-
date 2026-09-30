@@ -1,91 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AHMED TRADERS POWER SOLUTIONS | Solar Sales & Service</title>
-<meta name="description" content="AHMED TRADERS POWER SOLUTIONS - Solar Sales and Service in Bagjola, Baduria, North 24 Parganas.">
-<style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Arial,Helvetica,sans-serif;color:#17324d;background:#f7fbff;line-height:1.6}
-header{background:#fff;box-shadow:0 2px 12px #0001;position:sticky;top:0;z-index:10}
-.nav{max-width:1100px;margin:auto;padding:15px 20px;display:flex;align-items:center;justify-content:space-between}
-.logo{font-weight:800;font-size:18px;color:#123c5a}.logo span{color:#f5a400}
-nav a{margin-left:18px;text-decoration:none;color:#17324d;font-weight:600}
-.hero{background:linear-gradient(135deg,#083b5c,#0b6b80);color:white;padding:85px 20px}
-.hero-inner{max-width:1100px;margin:auto}
-.badge{display:inline-block;background:#f5a400;color:#152b3d;padding:7px 14px;border-radius:30px;font-weight:bold;margin-bottom:18px}
-h1{font-size:clamp(38px,6vw,64px);line-height:1.08;margin-bottom:18px}
-.hero p{font-size:20px;max-width:650px;color:#e8f7ff}
-.buttons{margin-top:28px;display:flex;gap:12px;flex-wrap:wrap}
-.btn{padding:13px 21px;border-radius:8px;text-decoration:none;font-weight:bold;display:inline-block}
-.primary{background:#f5a400;color:#172b3b}.secondary{border:1px solid #fff;color:#fff}
-section{max-width:1100px;margin:auto;padding:65px 20px}
-.title{text-align:center;margin-bottom:35px}.title h2{font-size:34px}.title p{color:#617386}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.card{background:#fff;padding:28px;border-radius:14px;box-shadow:0 5px 25px #0b365b12;border:1px solid #e5eef5}
-.icon{font-size:35px;margin-bottom:10px}.card h3{margin-bottom:8px;color:#0b5670}
-.about{background:#eaf7fb}.about-inner{max-width:1100px;margin:auto;padding:65px 20px;display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
-.about-box{background:white;padding:30px;border-radius:15px}
-.contact{background:#083b5c;color:white}.contact .title p{color:#d5edf7}
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}
-.contact-box{background:#ffffff12;border:1px solid #ffffff22;padding:28px;border-radius:14px}
-.contact-box a{color:white;text-decoration:none}
-footer{background:#052c45;color:#cfe4ed;text-align:center;padding:25px 20px}
-.float{position:fixed;right:18px;bottom:18px;background:#19a95b;color:white;padding:13px 18px;border-radius:50px;text-decoration:none;font-weight:bold;box-shadow:0 5px 18px #0004;z-index:20}
-@media(max-width:750px){nav{display:none}.cards,.about-inner,.contact-grid{grid-template-columns:1fr}.hero{padding:65px 20px}section{padding:48px 20px}.about-inner{padding:48px 20px}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ahmed Traders Power Solutions | Solar & Power Solutions</title>
+
+  <meta name="description" content="Ahmed Traders Power Solutions - Solar panels, hybrid inverters, lithium batteries, installation and electrical power solutions.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f9fc;
+      color: #172033;
+      line-height: 1.6;
+    }
+
+    header {
+      background: white;
+      padding: 18px 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+
+    .logo {
+      font-size: 21px;
+      font-weight: 800;
+    }
+
+    .logo span {
+      color: #f5a900;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #172033;
+      margin-left: 22px;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: #f5a900;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #063b59, #087e9f);
+      color: white;
+      padding: 90px 7%;
+      min-height: 570px;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #ffb000;
+      color: #172033;
+      padding: 9px 18px;
+      border-radius: 30px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: 55px;
+      line-height: 1.1;
+      margin-bottom: 22px;
+    }
+
+    .hero p {
+      font-size: 19px;
+      max-width: 700px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 25px;
+      margin: 7px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .call {
+      background: #ffb000;
+      color: #172033;
+    }
+
+    .whatsapp {
+      background: #20c76b;
+      color: white;
+    }
+
+    section {
+      padding: 70px 7%;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 35px;
+      margin-bottom: 12px;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      color: #667085;
+      margin-bottom: 40px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px 22px;
+      border-radius: 15px;
+      box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-7px);
+    }
+
+    .icon {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    .about {
+      background: white;
+    }
+
+    .about-box {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .contact {
+      background: #063b59;
+      color: white;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 38px;
+      margin-bottom: 15px;
+    }
+
+    .contact p {
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    .floating-whatsapp {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background: #20c76b;
+      color: white;
+      padding: 14px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+      z-index: 2000;
+    }
+
+    @media (max-width: 900px) {
+      .cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .hero h1 {
+        font-size: 42px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 15px 5%;
+      }
+
+      nav {
+        display: none;
+      }
+
+      .hero {
+        padding: 65px 6%;
+      }
+
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 55px 6%;
+      }
+    }
+  </style>
 </head>
+
 <body>
+
 <header>
-<div class="nav">
-<div class="logo">☀ AHMED TRADERS <span>POWER SOLUTIONS</span></div>
-<nav><a href="#home">Home</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
-</div>
+  <div class="logo">
+    ☀ AHMED TRADERS <span>POWER SOLUTIONS</span>
+  </div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
-<main>
 <section class="hero" id="home">
-<div class="hero-inner">
-<div class="badge">☀ SOLAR SALES & SERVICE</div>
-<h1>Power Your Future With Solar Energy</h1>
-<p>Reliable solar solutions for homes, shops and businesses. Sales, installation support and service from AHMED TRADERS POWER SOLUTIONS.</p>
-<div class="buttons">
-<a class="btn primary" href="tel:9382946987">📞 Call Now</a>
-<a class="btn secondary" href="https://wa.me/919382946987?text=Hello%20AHMED%20TRADERS%20POWER%20SOLUTIONS,%20I%20want%20to%20know%20about%20solar%20solutions.">💬 WhatsApp</a>
-</div>
-</div>
+  <div class="hero-content">
+
+    <div class="badge">☀ SOLAR SALES & SERVICE</div>
+
+    <h1>Power Your Future With Solar Energy</h1>
+
+    <p>
+      Reliable solar and power solutions for homes, shops and businesses.
+      Solar panel installation, hybrid inverter, lithium battery and
+      complete power backup solutions.
+    </p>
+
+    <a class="btn call" href="tel:+919382946987">
+      📞 Call Now
+    </a>
+
+    <a class="btn whatsapp"
+       href="https://wa.me/919382946987?text=Hello%20Ahmed%20Traders%20Power%20Solutions,%20I%20need%20information%20about%20your%20solar%20services."
+       target="_blank">
+      💬 WhatsApp
+    </a>
+
+  </div>
 </section>
 
 <section id="services">
-<div class="title"><h2>Our Services</h2><p>Complete solar solutions for your power needs.</p></div>
-<div class="cards">
-<div class="card"><div class="icon">🔆</div><h3>Solar Sales</h3><p>Solar panels and related power solutions for residential and commercial requirements.</p></div>
-<div class="card"><div class="icon">🔧</div><h3>Installation & Support</h3><p>Professional guidance for selecting and setting up a suitable solar system.</p></div>
-<div class="card"><div class="icon">⚙️</div><h3>Solar Service</h3><p>Service and maintenance support to help keep your solar system working efficiently.</p></div>
-</div>
+
+  <h2 class="section-title">Our Services</h2>
+
+  <p class="section-subtitle">
+    Complete solar and power solutions for your home and business
+  </p>
+
+  <div class="cards">
+
+    <div class="card">
+      <div class="icon">☀️</div>
+      <h3>Solar Panel</h3>
+      <p>
+        Solar panel supply, installation and complete solar system solutions.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">⚡</div>
+      <h3>Hybrid Inverter</h3>
+      <p>
+        Reliable hybrid inverter solutions for uninterrupted power backup.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🔋</div>
+      <h3>Lithium Battery</h3>
+      <p>
+        Modern lithium battery solutions for solar and backup power systems.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🔧</div>
+      <h3>Installation & Service</h3>
+      <p>
+        Professional installation, maintenance and after-sales service.
+      </p>
+    </div>
+
+  </div>
 </section>
 
-<div class="about" id="about">
-<div class="about-inner">
-<div><div class="badge">ABOUT US</div><h2>AHMED TRADERS POWER SOLUTIONS</h2><p>We provide solar sales and service solutions in and around Bagjola, Baduria, North 24 Parganas. Our focus is dependable service and practical solar power solutions for our customers.</p></div>
-<div class="about-box"><h3>Why Solar?</h3><p>☀ Reduce dependence on conventional electricity<br>🌱 Cleaner energy for a better future<br>💡 Suitable solutions for homes and businesses<br>🔧 Service support for your solar needs</p></div>
-</div>
-</div>
+<section class="about" id="about">
 
-<section id="contact" class="contact">
-<div class="title"><h2>Contact Us</h2><p>Talk to us about your solar requirement.</p></div>
-<div class="contact-grid">
-<div class="contact-box"><h3>📞 Phone / WhatsApp</h3><p><a href="tel:9382946987">9382946987</a></p><br><a class="btn primary" href="https://wa.me/919382946987?text=Hello%20AHMED%20TRADERS%20POWER%20SOLUTIONS">Message on WhatsApp</a></div>
-<div class="contact-box"><h3>📍 Our Location</h3><p>Bagjola, Baduria,<br>North 24 Parganas,<br>West Bengal, India</p></div>
-</div>
+  <h2 class="section-title">About Ahmed Traders Power Solutions</h2>
+
+  <div class="about-box">
+    <p>
+      Ahmed Traders Power Solutions provides solar energy and power backup
+      solutions for residential, commercial and business customers.
+      We focus on quality products, proper installation and reliable service.
+    </p>
+
+    <br>
+
+    <p>
+      ☀ Solar Panels &nbsp; | &nbsp;
+      ⚡ Hybrid Inverters &nbsp; | &nbsp;
+      🔋 Lithium Batteries &nbsp; | &nbsp;
+      🔧 Installation & Service
+    </p>
+  </div>
+
 </section>
-</main>
+
+<section class="contact" id="contact">
+
+  <h2>Get In Touch</h2>
+
+  <p>
+    Need a solar system or power backup solution?
+    Contact Ahmed Traders Power Solutions today.
+  </p>
+
+  <a class="btn call" href="tel:+919382946987">
+    📞 9382946987
+  </a>
+
+  <a class="btn whatsapp"
+     href="https://wa.me/919382946987?text=Hello%20Ahmed%20Traders%20Power%20Solutions"
+     target="_blank">
+    💬 Chat on WhatsApp
+  </a>
+
+</section>
 
 <footer>
-<p>© 2026 AHMED TRADERS POWER SOLUTIONS. All Rights Reserved.</p>
-<p>Solar Sales & Service | Bagjola, Baduria, North 24 Parganas</p>
+  <p>© 2026 Ahmed Traders Power Solutions. All Rights Reserved.</p>
 </footer>
-<a class="float" href="https://wa.me/919382946987?text=Hello%20AHMED%20TRADERS%20POWER%20SOLUTIONS">💬 WhatsApp</a>
+
+<a class="floating-whatsapp"
+   href="https://wa.me/919382946987"
+   target="_blank">
+  💬 WhatsApp
+</a>
+
 </body>
 </html>
